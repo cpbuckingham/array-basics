@@ -1,0 +1,13 @@
+friend = nil
+friend_array = []
+while friend != ''
+  puts "What is your friend's name?"
+  friend=gets.chomp
+  if friend != ''
+    friend_array.push(friend)
+  end
+end
+
+puts friend_array.join(', ')
+puts friend_array.sort_by(&:downcase).uniq
+puts friend_array.sort_by(&:downcase).uniq.reverse
